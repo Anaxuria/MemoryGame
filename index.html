@@ -7,17 +7,31 @@
 
     <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="stylesheet" href="./src/styles/main.css">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 </head>
 <body>
     <main>
-        <h2>Jogo da Memória</h2>
-        <div class="game"></div>
+
+        <section class="show">
+            <h2>Jogo da Memória</h2>
+            <div class="game"></div>
+        </section>        
+
+        <section class="win unshow">
+            <i class="ph-fill ph-trophy"></i>
+            <h2>Você venceu!🎉</h2>
+        </section>
+
         <button class="reset" onclick="window.location.reload()">RESET GAME</button>
     </main>
 
-    <section>
-        <h2>Você venceu!🎉</h2>
-    </section>
+    <footer>
+        <span>
+            Feito por <a href="https://anaxuria.github.io/DevLinks/">anaxuria</a> <i class="ph ph-heart"></i>
+        </span>
+    </footer>
+
+    
 
     <script src="./src/scripts/engine.js" defer></script>
 </body>

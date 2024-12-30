@@ -36,6 +36,7 @@ function checkMatch() {
     openCards = [];
 
     if(document.querySelectorAll(".boxMatch").length === emojis.length) {
-        alert("Você venceu!");
+        document.querySelector(".show").classList.add("unshow");
+        document.querySelector(".win").classList.remove("unshow");
     }
 }
